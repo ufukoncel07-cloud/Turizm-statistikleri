@@ -373,17 +373,31 @@ export default function TurizmDashboard() {
         @media (prefers-reduced-motion: reduce) {
           .animate-fadeUp, .hover-lift, .tab-btn { animation: none !important; transition: none !important; }
         }
+        @media (max-width: 768px) {
+          .mobile-header { padding: 12px 16px !important; flex-direction: column !important; align-items: stretch !important; gap: 16px !important; }
+          .mobile-logo-container { justify-content: center !important; }
+          .mobile-tabs { justify-content: center !important; }
+          .mobile-hero { padding: 24px 16px 40px !important; }
+          .mobile-hero-flex { flex-direction: column !important; gap: 16px !important; align-items: flex-start !important; }
+          .mobile-main { padding: 0 16px !important; }
+          .mobile-charts-grid { grid-template-columns: 1fr !important; }
+          .mobile-filters { justify-content: center !important; }
+        }
+        @media (max-width: 480px) {
+          .mobile-metric-grid { grid-template-columns: 1fr !important; }
+          .mobile-hero-number { font-size: 42px !important; }
+        }
       `}</style>
 
       {/* ================= HEADER ================= */}
-      <header style={{
+      <header className="mobile-header" style={{
         position: "sticky", top: 0, zIndex: 40,
         background: "rgba(244,250,251,0.78)", backdropFilter: "blur(18px)",
         borderBottom: "1px solid rgba(11,37,69,0.06)",
         padding: "14px 28px",
         display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 14,
       }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+        <div className="mobile-logo-container" style={{ display: "flex", alignItems: "center", gap: 14 }}>
           <img src="./logo.jpg" alt="Turizm İstatistikleri Logo" style={{ width: 68, height: 68, objectFit: "contain" }} />
           <div style={{ paddingLeft: 4 }}>
             <div style={{ fontFamily: "Plus Jakarta Sans, sans-serif", fontWeight: 800, fontSize: 19, color: COLORS.lacivert, letterSpacing: -0.3 }}>
@@ -396,7 +410,7 @@ export default function TurizmDashboard() {
         </div>
 
         {/* Sekme geçişi */}
-        <div style={{
+        <div className="mobile-tabs" style={{
           display: "flex", background: "rgba(11,37,69,0.06)", borderRadius: 999, padding: 4, gap: 4,
         }}>
           {[{ id: "antalya", label: "Antalya", icon: MapPin }, { id: "turkiye", label: "Türkiye", icon: Globe2 }].map((t) => (
@@ -420,15 +434,15 @@ export default function TurizmDashboard() {
       </header>
 
       {/* ================= HERO ================= */}
-      <section style={{ position: "relative", padding: "36px 28px 56px", overflow: "hidden" }}>
+      <section className="mobile-hero" style={{ position: "relative", padding: "36px 28px 56px", overflow: "hidden" }}>
         <div style={{ maxWidth: 1400, margin: "0 auto", position: "relative", zIndex: 2 }}>
-          <div className="animate-fadeUp" style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", flexWrap: "wrap", gap: 24 }}>
+          <div className="animate-fadeUp mobile-hero-flex" style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", flexWrap: "wrap", gap: 24 }}>
             <div>
               <div style={{ fontSize: 13, fontWeight: 700, color: COLORS.turkuazKoyu, textTransform: "uppercase", letterSpacing: 1.2, marginBottom: 8 }}>
                 {bolgeAdi} · {ay !== "all" ? MONTHS[Number(ay) - 1] : QUARTERS.find(q => q.id === ceyrek)?.label} {yil}
               </div>
               <div style={{ display: "flex", alignItems: "baseline", gap: 14, flexWrap: "wrap" }}>
-                <span style={{
+                <span className="mobile-hero-number" style={{
                   fontFamily: "JetBrains Mono, monospace", fontWeight: 700, fontSize: "clamp(38px, 6vw, 66px)",
                   color: COLORS.lacivert, letterSpacing: -1.5, lineHeight: 1,
                 }}>
@@ -463,10 +477,10 @@ export default function TurizmDashboard() {
         </svg>
       </section>
 
-      <main style={{ maxWidth: 1400, margin: "0 auto", padding: "0 28px", display: "flex", flexDirection: "column", gap: 22 }}>
+      <main className="mobile-main" style={{ maxWidth: 1400, margin: "0 auto", padding: "0 28px", display: "flex", flexDirection: "column", gap: 22 }}>
 
         {/* ================= FİLTRE ÇUBUĞU ================= */}
-        <div className="animate-fadeUp" style={{
+        <div className="animate-fadeUp mobile-filters" style={{
           display: "flex", flexWrap: "wrap", alignItems: "center", gap: 10,
           background: "rgba(255,255,255,0.55)", backdropFilter: "blur(16px)",
           border: "1px solid rgba(255,255,255,0.7)", borderRadius: 999, padding: "10px 16px",
@@ -483,7 +497,7 @@ export default function TurizmDashboard() {
         </div>
 
         {/* ================= METRİK KARTLARI ================= */}
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16 }}>
+        <div className="mobile-metric-grid" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 16 }}>
           <MetricCard icon={Users} label="Gelen Turist Sayısı" value={mevcutAgg ? trFmt(mevcutAgg.ziyaretci) : "—"} unit="kişi"
             deltaVal={mevcutAgg && karsilastirAgg ? delta(mevcutAgg.ziyaretci, karsilastirAgg.ziyaretci) : null} accent={COLORS.turkuaz} delayMs={40} />
           <MetricCard icon={DollarSign} label="Turizm Geliri" value={mevcutAgg ? fmtGelir(mevcutAgg) : "—"} unit="$"
@@ -525,7 +539,7 @@ export default function TurizmDashboard() {
         </SectionCard>
 
         {/* ================= PASTA + BAR GRID ================= */}
-        <div style={{ display: "grid", gridTemplateColumns: "1.1fr 1fr", gap: 22, alignItems: "stretch" }}>
+        <div className="mobile-charts-grid" style={{ display: "grid", gridTemplateColumns: "1.1fr 1fr", gap: 22, alignItems: "stretch" }}>
           <SectionCard title="Milliyete Göre Dağılım" subtitle="Seçili döneme göre ziyaretçi payı" icon={Globe2} delayMs={150}>
             <ResponsiveContainer width="100%" height={340}>
               <PieChart>
