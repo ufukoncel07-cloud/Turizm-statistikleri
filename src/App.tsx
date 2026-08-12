@@ -85,11 +85,24 @@ function aggregate(dataset: any, yil: number, quarterId: string, ay: string) {
   
   const aylar = yilVeri.aylar.filter((a: any) => monthsSet.includes(a.ayNo));
   if (aylar.length === 0) return null;
-  const ziyaretci = aylar.reduce((a: number, b: any) => a + b.ziyaretci, 0);
-  const gelirUSD = aylar.reduce((a: number, b: any) => a + b.gelirUSD, 0);
+  
+  let ziyaretci = 0;
+  let gelirUSD = 0;
+  
+  if (ay === "all" && quarterId === "all") {
+    // Tüm yıl seçildiğinde resmi toplamları kullan
+    ziyaretci = yilVeri.toplamZiyaretci;
+    gelirUSD = yilVeri.toplamGelirUSD;
+  } else {
+    // Belirli bir dönem seçildiğinde ayları topla
+    ziyaretci = aylar.reduce((a: number, b: any) => a + b.ziyaretci, 0);
+    gelirUSD = aylar.reduce((a: number, b: any) => a + b.gelirUSD, 0);
+  }
+
   const doluluk = Math.round(aylar.reduce((a: number, b: any) => a + b.doluluk, 0) / aylar.length);
   const kalis = +(aylar.reduce((a: number, b: any) => a + b.kalis, 0) / aylar.length).toFixed(1);
   const harcama = ziyaretci > 0 ? Math.round(gelirUSD / ziyaretci) : 0;
+  
   return { aylar, ziyaretci, gelirUSD, gelirMilyonUSD: gelirUSD / 1_000_000, doluluk, kalis, harcama };
 }
 
@@ -431,7 +444,7 @@ export default function TurizmDashboard() {
                 <span style={{ fontSize: 18, fontWeight: 600, color: COLORS.deniz, paddingBottom: 8 }}>gelen turist</span>
               </div>
               <p style={{ fontSize: 14.5, color: COLORS.lacivert, opacity: 0.65, maxWidth: 560, marginTop: 10, lineHeight: 1.6 }}>
-                Seçili döneme ait {trFmt(mevcutAgg?.gelirUSD / 1_000_000 || 0)} milyon $ turizm geliri,
+                Seçili döneme ait {trFmt(mevcutAgg ? mevcutAgg.gelirUSD / 1_000_000 : 0)} milyon $ turizm geliri,
                 %{mevcutAgg?.doluluk ?? "—"} ortalama otel doluluğu ile Akdeniz'in incisi {bolgeAdi.toLowerCase() === "türkiye" ? "genelinde" : "kıyılarında"} kaydedildi.
               </p>
             </div>
