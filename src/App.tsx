@@ -636,7 +636,7 @@ export default function TurizmDashboard() {
           borderRadius: 24, border: "1px solid rgba(11,37,69,0.06)",
         }}>
           <div style={{ fontFamily: "Plus Jakarta Sans, sans-serif", fontWeight: 700, fontSize: 13.5, color: COLORS.lacivert, marginBottom: 4 }}>
-            Hazırlayan: Antalya Büyükşehir Belediyesi, Kent Tarihi, Tanıtım ve Turizm Daire Başkanlığı personeli Ufuk Öncel
+            Hazırlayan: Ufuk Öncel
           </div>
           <div style={{ fontSize: 11.5, color: COLORS.lacivert, opacity: 0.5, lineHeight: 1.6, maxWidth: 640, margin: "6px auto 0" }}>
             Tüm veriler, Türkiye Cumhuriyeti Kültür ve Turizm Bakanlığı (KTB) ile Türkiye İstatistik Kurumu (TÜİK) tarafından kamuoyuna sunulan 
