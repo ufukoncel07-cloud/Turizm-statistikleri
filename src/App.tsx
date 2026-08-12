@@ -384,13 +384,13 @@ export default function TurizmDashboard() {
         display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 14,
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <img src="./logo.png" alt="Turizm İstatistikleri Logo" style={{ width: 68, height: 68, objectFit: "contain" }} />
+          <img src="./logo.jpg" alt="Turizm İstatistikleri Logo" style={{ width: 68, height: 68, objectFit: "contain" }} />
           <div style={{ paddingLeft: 4 }}>
             <div style={{ fontFamily: "Plus Jakarta Sans, sans-serif", fontWeight: 800, fontSize: 19, color: COLORS.lacivert, letterSpacing: -0.3 }}>
               Turizm İstatistikleri
             </div>
             <div style={{ fontSize: 12, color: COLORS.deniz, fontWeight: 600, display: "flex", alignItems: "center", gap: 5 }}>
-              <Sparkles size={12} /> Antalya & Türkiye · 2019–2026
+              Antalya & Türkiye · 2019–2026
             </div>
           </div>
         </div>
