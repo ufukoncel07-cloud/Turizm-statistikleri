@@ -390,7 +390,7 @@ export default function TurizmDashboard() {
             overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center",
             background: "#fff"
           }}>
-            <img src="/logo.png" alt="Turizm İstatistikleri Logo" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+            <img src="./logo.png" alt="Turizm İstatistikleri Logo" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
           </div>
           <div>
             <div style={{ fontFamily: "Plus Jakarta Sans, sans-serif", fontWeight: 800, fontSize: 19, color: COLORS.lacivert, letterSpacing: -0.3 }}>
@@ -445,7 +445,7 @@ export default function TurizmDashboard() {
               </div>
               <p style={{ fontSize: 14.5, color: COLORS.lacivert, opacity: 0.65, maxWidth: 560, marginTop: 10, lineHeight: 1.6 }}>
                 Seçili döneme ait {trFmt(mevcutAgg ? mevcutAgg.gelirUSD / 1_000_000 : 0)} milyon $ turizm geliri,
-                %{mevcutAgg?.doluluk ?? "—"} ortalama otel doluluğu ile Akdeniz'in incisi {bolgeAdi.toLowerCase() === "türkiye" ? "genelinde" : "kıyılarında"} kaydedildi.
+                %{mevcutAgg?.doluluk ?? "—"} ortalama otel doluluğu ile {sekme === "turkiye" ? "Türkiye genelinde" : "Antalya ili sınırları içerisinde"} kaydedilmiştir.
               </p>
             </div>
             <div style={{
