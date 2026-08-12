@@ -5,7 +5,7 @@ import {
 } from "recharts";
 import {
   Users, DollarSign, BedDouble, Clock3, Wallet, MapPin, TrendingUp,
-  TrendingDown, Globe2, SlidersHorizontal, Building2, Plane, Waves, Sparkles,
+  TrendingDown, Globe2, SlidersHorizontal, Building2, Plane, Sparkles,
 } from "lucide-react";
 import { antalyaData, turkeyData } from './mockData';
 
@@ -385,16 +385,16 @@ export default function TurizmDashboard() {
       }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <div style={{
-            width: 44, height: 44, borderRadius: 14,
-            background: `linear-gradient(135deg, ${COLORS.turkuaz}, ${COLORS.deniz} 55%, ${COLORS.lacivert})`,
-            display: "flex", alignItems: "center", justifyContent: "center",
-            boxShadow: `0 8px 20px ${COLORS.turkuaz}55`,
+            width: 48, height: 48, borderRadius: 12,
+            boxShadow: `0 4px 12px rgba(11,37,69,0.1)`,
+            overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center",
+            background: "#fff"
           }}>
-            <Waves size={22} color="#fff" />
+            <img src="/logo.png" alt="Turizm İstatistikleri Logo" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
           </div>
           <div>
             <div style={{ fontFamily: "Plus Jakarta Sans, sans-serif", fontWeight: 800, fontSize: 19, color: COLORS.lacivert, letterSpacing: -0.3 }}>
-              Turizm İstatistikleri Paneli
+              Turizm İstatistikleri
             </div>
             <div style={{ fontSize: 12, color: COLORS.deniz, fontWeight: 600, display: "flex", alignItems: "center", gap: 5 }}>
               <Sparkles size={12} /> Antalya & Türkiye · 2019–2026
