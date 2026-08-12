@@ -188,7 +188,7 @@ export const antalyaData: YearlyAntalyaData[] = [
   },
   {
     year: 2023,
-    totalVisitors: 15567843,
+    totalVisitors: 16568643,
     totalRevenue: 14903,
     avgOccupancy: 79.6,
     nationalities: [
@@ -224,7 +224,7 @@ export const antalyaData: YearlyAntalyaData[] = [
   },
   {
     year: 2024,
-    totalVisitors: 16543218,
+    totalVisitors: 17443218,
     totalRevenue: 16489,
     avgOccupancy: 82.1,
     nationalities: [
@@ -260,7 +260,7 @@ export const antalyaData: YearlyAntalyaData[] = [
   },
   {
     year: 2025,
-    totalVisitors: 17243218,
+    totalVisitors: 18243236,
     totalRevenue: 17782,
     avgOccupancy: 84.3,
     nationalities: [
@@ -481,7 +481,7 @@ export const turkeyData: YearlyTurkeyData[] = [
   },
   {
     year: 2023,
-    totalVisitors: 56700000,
+    totalVisitors: 56712395,
     totalRevenue: 54277,
     avgOccupancy: 72.4,
     nationalities: [
@@ -518,7 +518,7 @@ export const turkeyData: YearlyTurkeyData[] = [
   },
   {
     year: 2024,
-    totalVisitors: 61300000,
+    totalVisitors: 61345712,
     totalRevenue: 61100,
     avgOccupancy: 75.8,
     nationalities: [
@@ -555,7 +555,7 @@ export const turkeyData: YearlyTurkeyData[] = [
   },
   {
     year: 2025,
-    totalVisitors: 64500000,
+    totalVisitors: 64583419,
     totalRevenue: 66514,
     avgOccupancy: 77.2,
     nationalities: [
