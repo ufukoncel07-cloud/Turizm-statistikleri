@@ -46,7 +46,7 @@ export const antalyaData: YearlyAntalyaData[] = [
   {
     year: 2019,
     totalVisitors: 14745631,
-    totalRevenue: 9686,
+    totalRevenue: 9812,
     avgOccupancy: 77.4,
     nationalities: [
       { country: 'Rusya', visitors: 3266742 },
@@ -65,24 +65,24 @@ export const antalyaData: YearlyAntalyaData[] = [
       { type: 'Deniz Yolu', count: 146078 },
     ],
     months: [
-      { month: 1, monthName: 'Ocak', visitors: 312451, revenue: 470, occupancy: 35.2, occupancyByType: { fiveStar: 42.1, fourStar: 31.5, threeStarAndLess: 24.8, holidayVillage: 18.3 }, avgStayDays: 6.2, avgSpendPerPerson: 942 },
-      { month: 2, monthName: 'Şubat', visitors: 289843, revenue: 436, occupancy: 33.7, occupancyByType: { fiveStar: 39.8, fourStar: 29.1, threeStarAndLess: 22.4, holidayVillage: 16.7 }, avgStayDays: 6.1, avgSpendPerPerson: 943 },
-      { month: 3, monthName: 'Mart', visitors: 521672, revenue: 789, occupancy: 47.3, occupancyByType: { fiveStar: 55.4, fourStar: 43.2, threeStarAndLess: 36.8, holidayVillage: 28.1 }, avgStayDays: 6.5, avgSpendPerPerson: 946 },
-      { month: 4, monthName: 'Nisan', visitors: 812349, revenue: 1325, occupancy: 62.8, occupancyByType: { fiveStar: 72.3, fourStar: 59.7, threeStarAndLess: 51.2, holidayVillage: 49.6 }, avgStayDays: 6.7, avgSpendPerPerson: 947 },
-      { month: 5, monthName: 'Mayıs', visitors: 1243812, revenue: 1822, occupancy: 79.4, occupancyByType: { fiveStar: 87.2, fourStar: 76.8, threeStarAndLess: 68.3, holidayVillage: 71.2 }, avgStayDays: 6.9, avgSpendPerPerson: 948 },
-      { month: 6, monthName: 'Haziran', visitors: 1876543, revenue: 2306, occupancy: 91.2, occupancyByType: { fiveStar: 95.4, fourStar: 90.1, threeStarAndLess: 84.7, holidayVillage: 93.2 }, avgStayDays: 7.2, avgSpendPerPerson: 948 },
-      { month: 7, monthName: 'Temmuz', visitors: 2543218, revenue: 2687, occupancy: 95.8, occupancyByType: { fiveStar: 97.9, fourStar: 95.2, threeStarAndLess: 91.3, holidayVillage: 98.1 }, avgStayDays: 7.4, avgSpendPerPerson: 913 },
-      { month: 8, monthName: 'Ağustos', visitors: 2689341, revenue: 2822, occupancy: 96.3, occupancyByType: { fiveStar: 98.2, fourStar: 96.1, threeStarAndLess: 92.4, holidayVillage: 98.7 }, avgStayDays: 7.5, avgSpendPerPerson: 914 },
-      { month: 9, monthName: 'Eylül', visitors: 2187654, revenue: 2149, occupancy: 88.7, occupancyByType: { fiveStar: 93.1, fourStar: 87.3, threeStarAndLess: 81.2, holidayVillage: 90.4 }, avgStayDays: 7.1, avgSpendPerPerson: 913 },
-      { month: 10, monthName: 'Ekim', visitors: 1324561, revenue: 1298, occupancy: 74.2, occupancyByType: { fiveStar: 81.4, fourStar: 72.6, threeStarAndLess: 64.3, holidayVillage: 67.8 }, avgStayDays: 6.8, avgSpendPerPerson: 913 },
-      { month: 11, monthName: 'Kasım', visitors: 543218, revenue: 587, occupancy: 48.3, occupancyByType: { fiveStar: 56.7, fourStar: 45.2, threeStarAndLess: 38.1, holidayVillage: 22.4 }, avgStayDays: 6.3, avgSpendPerPerson: 913 },
-      { month: 12, monthName: 'Aralık', visitors: 400969, revenue: 505, occupancy: 41.6, occupancyByType: { fiveStar: 49.3, fourStar: 38.7, threeStarAndLess: 31.2, holidayVillage: 19.8 }, avgStayDays: 6.4, avgSpendPerPerson: 1004 },
+      { month: 1, monthName: 'Ocak', visitors: 312451, revenue: 439, occupancy: 35.2, occupancyByType: { fiveStar: 42.1, fourStar: 31.5, threeStarAndLess: 24.8, holidayVillage: 18.3 }, avgStayDays: 6.2, avgSpendPerPerson: 880 },
+      { month: 2, monthName: 'Şubat', visitors: 289843, revenue: 407, occupancy: 33.7, occupancyByType: { fiveStar: 39.8, fourStar: 29.1, threeStarAndLess: 22.4, holidayVillage: 16.7 }, avgStayDays: 6.1, avgSpendPerPerson: 880 },
+      { month: 3, monthName: 'Mart', visitors: 521672, revenue: 737, occupancy: 47.3, occupancyByType: { fiveStar: 55.4, fourStar: 43.2, threeStarAndLess: 36.8, holidayVillage: 28.1 }, avgStayDays: 6.5, avgSpendPerPerson: 883 },
+      { month: 4, monthName: 'Nisan', visitors: 812349, revenue: 1238, occupancy: 62.8, occupancyByType: { fiveStar: 72.3, fourStar: 59.7, threeStarAndLess: 51.2, holidayVillage: 49.6 }, avgStayDays: 6.7, avgSpendPerPerson: NaN },
+      { month: 5, monthName: 'Mayıs', visitors: 1243812, revenue: 1702, occupancy: 79.4, occupancyByType: { fiveStar: 87.2, fourStar: 76.8, threeStarAndLess: 68.3, holidayVillage: 71.2 }, avgStayDays: 6.9, avgSpendPerPerson: NaN },
+      { month: 6, monthName: 'Haziran', visitors: 1876543, revenue: 2153, occupancy: 91.2, occupancyByType: { fiveStar: 95.4, fourStar: 90.1, threeStarAndLess: 84.7, holidayVillage: 93.2 }, avgStayDays: 7.2, avgSpendPerPerson: 885 },
+      { month: 7, monthName: 'Temmuz', visitors: 2543218, revenue: 2862, occupancy: 95.8, occupancyByType: { fiveStar: 97.9, fourStar: 95.2, threeStarAndLess: 91.3, holidayVillage: 98.1 }, avgStayDays: 7.4, avgSpendPerPerson: 972 },
+      { month: 8, monthName: 'Ağustos', visitors: 2689341, revenue: 3005, occupancy: 96.3, occupancyByType: { fiveStar: 98.2, fourStar: 96.1, threeStarAndLess: 92.4, holidayVillage: 98.7 }, avgStayDays: 7.5, avgSpendPerPerson: 973 },
+      { month: 9, monthName: 'Eylül', visitors: 2187654, revenue: 2289, occupancy: 88.7, occupancyByType: { fiveStar: 93.1, fourStar: 87.3, threeStarAndLess: 81.2, holidayVillage: 90.4 }, avgStayDays: 7.1, avgSpendPerPerson: 972 },
+      { month: 10, monthName: 'Ekim', visitors: 1324561, revenue: 1382, occupancy: 74.2, occupancyByType: { fiveStar: 81.4, fourStar: 72.6, threeStarAndLess: 64.3, holidayVillage: 67.8 }, avgStayDays: 6.8, avgSpendPerPerson: 972 },
+      { month: 11, monthName: 'Kasım', visitors: 543218, revenue: 625, occupancy: 48.3, occupancyByType: { fiveStar: 56.7, fourStar: 45.2, threeStarAndLess: 38.1, holidayVillage: 22.4 }, avgStayDays: 6.3, avgSpendPerPerson: 972 },
+      { month: 12, monthName: 'Aralık', visitors: 400969, revenue: 539, occupancy: 41.6, occupancyByType: { fiveStar: 49.3, fourStar: 38.7, threeStarAndLess: 31.2, holidayVillage: 19.8 }, avgStayDays: 6.4, avgSpendPerPerson: 1072 },
     ],
   },
   {
     year: 2020,
     totalVisitors: 3981245,
-    totalRevenue: 2502,
+    totalRevenue: 3024,
     avgOccupancy: 31.2,
     nationalities: [
       { country: 'Rusya', visitors: 1023456 },
@@ -117,7 +117,7 @@ export const antalyaData: YearlyAntalyaData[] = [
   {
     year: 2021,
     totalVisitors: 8951432,
-    totalRevenue: 5641,
+    totalRevenue: 7335,
     avgOccupancy: 55.3,
     nationalities: [
       { country: 'Rusya', visitors: 2734321 },
@@ -153,7 +153,7 @@ export const antalyaData: YearlyAntalyaData[] = [
   {
     year: 2022,
     totalVisitors: 13542618,
-    totalRevenue: 11830,
+    totalRevenue: 12163,
     avgOccupancy: 73.8,
     nationalities: [
       { country: 'Rusya', visitors: 3854321 },
@@ -189,7 +189,7 @@ export const antalyaData: YearlyAntalyaData[] = [
   {
     year: 2023,
     totalVisitors: 15567843,
-    totalRevenue: 19373,
+    totalRevenue: 14903,
     avgOccupancy: 79.6,
     nationalities: [
       { country: 'Rusya', visitors: 4543218 },
@@ -225,7 +225,7 @@ export const antalyaData: YearlyAntalyaData[] = [
   {
     year: 2024,
     totalVisitors: 16543218,
-    totalRevenue: 15428,
+    totalRevenue: 16489,
     avgOccupancy: 82.1,
     nationalities: [
       { country: 'Rusya', visitors: 4765432 },
@@ -261,7 +261,7 @@ export const antalyaData: YearlyAntalyaData[] = [
   {
     year: 2025,
     totalVisitors: 17243218,
-    totalRevenue: 16697,
+    totalRevenue: 17782,
     avgOccupancy: 84.3,
     nationalities: [
       { country: 'Rusya', visitors: 4987654 },
@@ -299,7 +299,7 @@ export const antalyaData: YearlyAntalyaData[] = [
     // AÇIKLANAN SON VERİ: HAZİRAN 2026 (Ocak–Haziran toplamı)
     // Temmuz 2026 ve sonrası henüz Bakanlık tarafından yayımlanmamıştır.
     totalVisitors: 7547968, // Oca–Haz 2026 toplamı
-    totalRevenue: 7148,    // Oca–Haz 2026 toplamı (mln $)
+    totalRevenue: 6676,    // Oca–Haz 2026 toplamı (mln $)
     avgOccupancy: 72.7,    // Oca–Haz 2026 ortalaması
     nationalities: [
       { country: 'Rusya', visitors: 1876543 },
