@@ -383,16 +383,9 @@ export default function TurizmDashboard() {
         padding: "14px 28px",
         display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 14,
       }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-          <div style={{
-            width: 48, height: 48, borderRadius: 12,
-            boxShadow: `0 4px 12px rgba(11,37,69,0.1)`,
-            overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center",
-            background: "#fff"
-          }}>
-            <img src="./logo.png" alt="Turizm İstatistikleri Logo" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
-          </div>
-          <div>
+        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+          <img src="./logo.png" alt="Turizm İstatistikleri Logo" style={{ width: 68, height: 68, objectFit: "contain" }} />
+          <div style={{ paddingLeft: 4 }}>
             <div style={{ fontFamily: "Plus Jakarta Sans, sans-serif", fontWeight: 800, fontSize: 19, color: COLORS.lacivert, letterSpacing: -0.3 }}>
               Turizm İstatistikleri
             </div>
